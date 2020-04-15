@@ -18,7 +18,7 @@ const App = () => {
       <div className="card">
         {pokemon && pokemon.name &&
           <>
-            <img src={pokemon.sprites.front_default} />
+            <img alt={pokemon.name} src={pokemon.sprites.front_default} />
             <p>Nombre: {pokemon.name}</p>
             <p>Tipo: {pokemon.types.map(type => type.type.name)}</p>
           </>
